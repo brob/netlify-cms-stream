@@ -1,0 +1,105 @@
+:root {
+    --link-color: tomato;
+    --background-color: #ccc;
+}
+
+html {
+    font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, serif;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+body {
+    margin: 0;
+}
+* {
+    margin: 0;
+}
+* + * {
+    margin-top: 1em;
+}
+
+a {
+    color: var(--link-color);
+}
+img {
+    max-width: 100%;
+}
+
+.logo {
+    font-size: 3rem;
+    line-height: 1.3em;
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+}
+.logo-image {
+    margin: .5rem auto;
+}
+
+.banner {
+    background-color: var(--background-color);
+    padding: 4rem 1rem; 
+}
+.banner__content {
+    max-width: 850px;
+    width: 95vw;
+    margin: auto;
+}
+
+.container {
+    width:90vw;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.meetups {
+    display: flex;
+    margin: 3rem auto;
+    width: 95vw;
+    max-width: 1200px;
+}
+.meetup__title {
+    font-size: 1.5rem;
+    line-height: 1.4em;
+}
+.meetup__item {
+    padding: 1rem 2rem 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .4);
+}
+.meetup__date {
+    font-size: .8rem;
+    margin-top: .5rem;
+    font-style: italic;
+}
+.upcoming {
+    flex: 1;
+    max-width: 950px;
+    margin-right: 2rem;
+}
+.sidebar {
+    flex: .5;
+}
+@media (max-width: 640px) {
+    .meetups {
+        display: block;
+    }
+    .upcoming, .notes {
+        margin: 1rem auto 0;
+        width: 90vw;
+    }
+}
+.page-title {
+    font-size: 3rem;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+
+.footer {
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 1rem;
+    
+}
