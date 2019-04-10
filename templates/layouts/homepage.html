@@ -3,7 +3,7 @@
 <section class="meetups">
     <section class="upcoming">
         <h2>Upcoming Meetups</h2>
-        {% assign meetupSlice = meetups | lookup: "DevMemphis" | slice: "2" %}
+        {% assign meetupSlice = meetups | slice: "2" %}
         {% for meetup in meetupSlice %}
             <article class="meetup__item">
                 <h3 class="meetup__title"><a href="{{meetup.link }}" title="Link to {{ meetup.name }}">{{ meetup.name }}</a></h3>
